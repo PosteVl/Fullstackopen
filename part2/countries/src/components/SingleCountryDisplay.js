@@ -1,9 +1,10 @@
 import React from 'react'
 import Language from './Language'
 import Flag from './Flag'
+import Weather from './Weather'
 
 const SingleCountryDisplay = ({country}) => {
-  console.log(country)
+
   return (
     <div>
         <div>
@@ -22,6 +23,11 @@ const SingleCountryDisplay = ({country}) => {
 
         <div>
          <Flag flag={country[0].flag} />
+        </div>
+
+        <div>
+          <h1>Weather in {country[0].capital}</h1>
+          <Weather capital={country[0].capital} />
         </div>
     </div>
   )
