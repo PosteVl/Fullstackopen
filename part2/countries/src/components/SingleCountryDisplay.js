@@ -3,6 +3,7 @@ import Language from './Language'
 import Flag from './Flag'
 
 const SingleCountryDisplay = ({country}) => {
+  console.log(country)
   return (
     <div>
         <div>
